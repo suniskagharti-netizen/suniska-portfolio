@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Suniska Gharti</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background: #0b111f;
+      overflow-x: hidden;
+    }
+
+    /* ✨ Animated Stars */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+      background-size: 60px 60px, 100px 100px;
+      background-position: 0 0, 30px 30px;
+      opacity: 0.3;
+      animation: twinkle 6s infinite linear;
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.4; }
+      100% { opacity: 0.2; }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f7eac2;
+    }
+
+    section {
+      flex: 1;
+      margin: 40px auto;
+      padding: 40px;
+      width: 80%;
+      max-width: 900px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 15px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #f7eac2;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #e0e0e0;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: auto;
+    }
+
+    footer p {
+      color: #bbb;
+      font-size: 16px;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 768px) {
+      section {
+        width: 90%;
+        padding: 25px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Suniska Gharti | Portfolio</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact.html">Contact</a>
+   
+</nav>
+
+<section>
+  <h2>Introduction</h2>
+
+  <p>
+    Hi! I am a Grade 11 student studying Science at Kavya College. I was born and raised in Kathmandu Valley and currently live in Tokha-7, Swastik Colony.
+  </p>
+
+  <p>
+    I am passionate about exploring new places, travelling, and dancing. These interests have been a part of my life since childhood and help me express myself creatively.
+  </p>
+
+  <p>
+    I enjoy learning new skills and challenging myself. Currently, I am learning coding using tools like VS Code. I am exploring JavaScript and Python as part of my journey.
+  </p>
+
+  <p>
+    This website is created by me as a personal project to showcase my learning and creativity in web development.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Suniska Gharti</p>
+</footer>
+
+</body>
+</html>

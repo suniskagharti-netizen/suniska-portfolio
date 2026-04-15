@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Suniska Gharti</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background: #0b111f;
+      overflow-x: hidden;
+    }
+
+    /* ✨ Same Star Background */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+      background-size: 60px 60px, 100px 100px;
+      background-position: 0 0, 30px 30px;
+      opacity: 0.3;
+      animation: twinkle 6s infinite linear;
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.4; }
+      100% { opacity: 0.2; }
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover { color: #f7eac2; }
+
+    .Vervein {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .Vervein h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .Vervein p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .skills {
+      flex: 1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #f7eac2;
+    }
+
+    .skill-box {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      padding: 25px 35px;
+      margin: 15px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      color: #eee;
+      max-width: 260px;
+      transition: 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: auto;
+    }
+
+    footer p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .Vervein h1 { font-size: 28px; }
+      .skill-box { width: 90%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact.html">Contact</a>
+   
+</nav>
+
+<section class="Vervein">
+  <h1>Hello, I'm Suniska Gharti</h1>
+  <p>Student | Future Developer</p>
+</section>
+
+<section class="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill-box">I can cook various dishes from breakfast to dinner.</div>
+  <div class="skill-box">I know how to play piano.</div>
+  <div class="skill-box">I love doing arts like drawing & painting.</div>
+  <div class="skill-box">I can do makeup, hairstyles, and nails.</div>
+  <div class="skill-box">I can do basic coding.</div>
+
+</section>
+
+<footer>
+  <p>© 2026 Suniska Gharti | Portfolio</p>
+</footer>
+
+</body>
+</html>

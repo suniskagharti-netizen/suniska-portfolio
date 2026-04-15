@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Suniska Gharti</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background: #0b111f;
+      overflow-x: hidden;
+    }
+
+    /* ✨ Star Background */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+      background-size: 60px 60px, 100px 100px;
+      background-position: 0 0, 30px 30px;
+      opacity: 0.3;
+      animation: twinkle 6s infinite linear;
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.4; }
+      100% { opacity: 0.2; }
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover { color: #f7eac2; }
+
+    .header {
+      text-align: center;
+      padding: 70px 20px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .header h1 { font-size: 36px; }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .hobby-list {
+      width: 55%;
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hobby-list h2 {
+      margin-bottom: 20px;
+      color: #f7eac2;
+    }
+
+    .hobby-list ul {
+      list-style: none;
+      line-height: 2;
+      font-size: 18px;
+    }
+
+    .frame {
+      width: 40%;
+      background: rgba(255,255,255,0.08);
+      border-radius: 15px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .small-frame {
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.15);
+    }
+
+    .small-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .small-frame:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .hobby-list, .frame {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="skills.html">Skills</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="header">
+  <h1>My Hobbies</h1>
+</section>
+
+<div class="container">
+
+  <div class="hobby-list">
+    <h2>Things I Love Doing</h2>
+    <ul>
+      <li>🍳 Cooking</li>
+      <li>💃 Dancing</li>
+      <li>🎨 Painting</li>
+      <li>💄 Makeup</li>
+      <li>✈️ Travelling</li>
+      <li>🏊 Swimming</li>
+    </ul>
+  </div>
+
+  <div class="frame">
+    <div class="small-frame">
+      <img src="coo.jfif" alt="Cooking">
+    </div>
+
+    <div class="small-frame">
+      <img src="dance.jfif" alt="Dancing">
+    </div>
+
+    <div class="small-frame">
+      <img src="painting.jfif" alt="Painting">
+    </div>
+
+    <div class="small-frame">
+      <img src="travel.jfif" alt="Travel">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Suniska Gharti | Portfolio</p>
+</footer>
+
+</body>
+</html>
